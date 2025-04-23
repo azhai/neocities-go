@@ -30,25 +30,27 @@ Alternatively you can use the `NEOCITIES_API_KEY` variable.
 
 Then you should be able to upload files to your website:
 
-    neocities upload foo.html bar.js folder/baz.jpg
+    neogo upload foo.html bar.js folder/baz.jpg
 
 You can also delete files:
 
-    neocities delete foo.html folder/baz.jpg
+    neogo delete foo.html folder/baz.jpg
 
 You get a list of available commands by default:
 
 ```bash
-$ neocities
-usage: neocities <command> [<args>]
+$ neogo
+usage: neogo <command> [<args>]
 
 Commands:
-   upload    Upload files to Neocities
-   delete    Delete files from Neocities
-   info      Info about Neocities websites
-   key       Neocities API key
-   list      List files on Neocities
-   version   Show neocities client version
+    upload       Upload files to Neocities
+    upload-root  Upload local files to webroot
+    delete       Delete files from Neocities
+    delete-all   Delete all remote files
+    info         Info about Neocities websites
+    key          Neocities API key
+    list         List files on Neocities
+    version      Show neocities client version
 
 Help for a specific command:
    help [command]
