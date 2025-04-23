@@ -47,6 +47,9 @@ func listLocalFiles() (files []string) {
 	}
 
 	for _, t := range entries {
+		if t.Name() == ".DS_Store" {
+			continue
+		}
 		files = append(files, t.Name())
 	}
 	return
