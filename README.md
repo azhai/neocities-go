@@ -4,21 +4,16 @@ A Neocities client written in Go
 Upload files to you [Neocities](https://neocities.org/) website from the
 comfort of your own terminal.
 
-[![Build Status](https://github.com/peterhellberg/neocities/actions/workflows/test.yml/badge.svg)](https://github.com/peterhellberg/neocities/actions/workflows/test.yml)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://pkg.go.dev/github.com/peterhellberg/neocities)
-[![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/peterhellberg/neocities#license-mit)
+[![Build Status](https://github.com/azhai/neocities-go/actions/workflows/test.yml/badge.svg)](https://github.com/azhai/neocities-go/actions/workflows/test.yml)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://pkg.go.dev/github.com/azhai/neocities-go)
+[![License MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/azhai/neocities-go#license-mit)
 
 ## Installation
 
-You can download precompiled binaries for
-[OS X](https://github.com/peterhellberg/neocities/releases/download/0.0.4/neocities-0.0.4-darwin-amd64.zip),
-[Linux](https://github.com/peterhellberg/neocities/releases/download/0.0.4/neocities-0.0.4-linux-amd64.zip),
-[Windows (32 bit)](https://github.com/peterhellberg/neocities/releases/download/0.0.4/neocities-0.0.4-windows-386.zip) and
-[Windows (64 bit)](https://github.com/peterhellberg/neocities/releases/download/0.0.4/neocities-0.0.4-windows-amd64.zip)
 
 Or, if you have [Go](http://golang.org/) installed:
 
-    go install github.com/peterhellberg/neocities@latest
+    go install github.com/azhai/neocities-go@latest
 
 ## Usage
 
@@ -31,7 +26,7 @@ export NEOCITIES_USER=<user>
 export NEOCITIES_PASS=<pass>
 ```
 
-Alternatively you can use the `NEOCITIES_KEY` variable.
+Alternatively you can use the `NEOCITIES_API_KEY` variable.
 
 Then you should be able to upload files to your website:
 

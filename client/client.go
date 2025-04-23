@@ -6,6 +6,10 @@ import (
 	"os"
 )
 
+func isVerbose() bool {
+	return os.Getenv("NEOCITIES_VERBOSE") == "true"
+}
+
 func dump(v interface{}) {
 	encodeJSON(os.Stdout, v)
 }

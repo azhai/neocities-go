@@ -1,14 +1,13 @@
 /*
-
 A Neocities API client written in Go
 
-Installation
+# Installation
 
 Just go get the command:
 
-    go get -u github.com/peterhellberg/neocities
+	go get -u github.com/azhai/neocities-go
 
-Usage
+# Usage
 
 First you need to export some environment variables:
 
@@ -17,15 +16,14 @@ First you need to export some environment variables:
 
 Then you can run the command:
 
-    neocities upload <filename> [<another filename>]
-
+	neocities upload <filename> [<another filename>]
 */
 package main
 
 import (
 	"os"
 
-	"github.com/peterhellberg/neocities/client"
+	"github.com/azhai/neocities-go/client"
 )
 
 func main() {

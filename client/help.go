@@ -35,12 +35,14 @@ func runHelp(cmd *Command, args *Args) {
 var helpText = `usage: neocities <command> [<args>]
 
 Commands:
-   upload    Upload files to Neocities
-   delete    Delete files from Neocities
-   info      Info about Neocities websites
-   key       Neocities API key
-   list      List files on Neocities
-   version   Show neocities client version
+   upload       Upload files to Neocities
+   upload-root  Upload local files to webroot
+   delete       Delete files from Neocities
+   delete-all   Delete all remote files
+   info         Info about Neocities websites
+   key          Neocities API key
+   list         List files on Neocities
+   version      Show neocities client version
 
 Help for a specific command:
    help [command]
@@ -49,10 +51,10 @@ Environment setup:
 
    export NEOCITIES_USER=<username>
    export NEOCITIES_PASS=<password>
-  
+
   (OR)
 
-   export NEOCITIES_KEY=<key>
+   export NEOCITIES_API_KEY=<key>
 
 `
 

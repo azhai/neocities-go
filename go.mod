@@ -1,5 +1,3 @@
-module github.com/peterhellberg/neocities
+module github.com/azhai/neocities-go
 
-go 1.23.4
-
-require github.com/ogier/pflag v0.0.1
+go 1.23.8

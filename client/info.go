@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/peterhellberg/neocities/api"
+	"github.com/azhai/neocities-go/api"
 )
 
 var cmdInfo = &Command{

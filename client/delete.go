@@ -3,7 +3,7 @@ package client
 import (
 	"os"
 
-	"github.com/peterhellberg/neocities/api"
+	"github.com/azhai/neocities-go/api"
 )
 
 var cmdDelete = &Command{
@@ -35,7 +35,7 @@ func runDelete(cmd *Command, args *Args) {
 		os.Exit(1)
 	}
 
-	if os.Getenv("NEOCITIES_VERBOSE") == "true" {
+	if isVerbose() {
 		response.Print()
 	}
 

@@ -1,9 +1,8 @@
 package client
 
 import (
+	"flag"
 	"os"
-
-	flag "github.com/ogier/pflag"
 )
 
 // Runner contains a map of commands

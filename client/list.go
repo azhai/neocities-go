@@ -3,7 +3,7 @@ package client
 import (
 	"fmt"
 
-	"github.com/peterhellberg/neocities/api"
+	"github.com/azhai/neocities-go/api"
 )
 
 var cmdList = &Command{

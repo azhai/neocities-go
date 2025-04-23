@@ -1,26 +1,18 @@
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.so
+*.db
+*.egg-info/
+*.gz
+*.lock
+*.sqlite
+*.sublime-project
+*.sublime-workspace
 
-# Folders
-_obj
-_test
-
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
-
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
-
-_testmain.go
-
-*.exe
-*.test
-
-# Ignore the neocities binary
-neocities
+.DS_Store
+.idea/
+.tox/
+.vscode/
+.zed/
+bin/
+build/
+dist/
+logs/
+neogo

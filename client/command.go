@@ -1,13 +1,12 @@
 package client
 
 import (
+	"flag"
 	"fmt"
 	"os"
 	"strings"
 
-	flag "github.com/ogier/pflag"
-
-	"github.com/peterhellberg/neocities/api"
+	"github.com/azhai/neocities-go/api"
 )
 
 // CmdRunner is the default command runner
@@ -37,7 +36,7 @@ func (c *Command) Name() string {
 }
 
 func (c *Command) parseArguments(args *Args) (err error) {
-	c.Flag.SetInterspersed(true)
+	// c.Flag.SetInterspersed(true)
 	c.Flag.Usage = c.PrintUsage
 
 	if err = c.Flag.Parse(args.Params); err == nil {
@@ -79,7 +78,7 @@ func (c *Command) Runnable() bool {
 }
 
 func getCredentials() api.Credentials {
-	if key := os.Getenv("NEOCITIES_KEY"); key != "" {
+	if key := os.Getenv("NEOCITIES_API_KEY"); key != "" {
 		return api.Credentials{Key: key}
 	}
 
@@ -87,7 +86,7 @@ func getCredentials() api.Credentials {
 	pass := os.Getenv("NEOCITIES_PASS")
 
 	if user == "" {
-		fmt.Println("Error: Missing environment variable NEOCITIES_USER or NEOCITIES_KEY")
+		fmt.Println("Error: Missing environment variable NEOCITIES_USER or NEOCITIES_API_KEY")
 
 		os.Exit(0)
 	}
